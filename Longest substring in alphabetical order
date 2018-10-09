@@ -1,0 +1,21 @@
+'''Assume s is a string of lower case characters.
+
+Write a program that prints the longest substring of s in which the letters occur in alphabetical order. For example, if s = 'azcbobobegghakl', then your program should print
+
+In the case of ties, print the first substring. For example, if s = 'abcbcd', then your program should print
+
+'''
+y=0
+list1=[]
+temp=s[0]
+for num in range(1,len(s)):
+    if(temp[y]<=s[num]): #if consicutive letters are in alphabetical order the letters are appended to form the substring
+        temp+=s[num]
+        y+=1
+    else:
+        list1.append(temp) #if consicutive letters are not in alphabetical order the temperory variable that saves the subset is set to default(empty)
+        temp=s[num]
+        y=0
+list1.append(temp)
+print("Longest substring in alphabetical order is:",max(list1,key=len))
+            
