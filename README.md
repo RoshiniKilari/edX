@@ -8,5 +8,3 @@ The concepts which seem regular, are treated in a different way.You will be able
 </br>
 In this repository you will find the exercises that I have completed at the end of each unit.
 </br>
-I completed 3rd week course(It's a 7 week course) and need to solve the midterm exam question.
-&#128579;
